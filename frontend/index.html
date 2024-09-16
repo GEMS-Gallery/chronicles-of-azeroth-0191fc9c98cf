@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Lore Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>World of Warcraft Lore</h1>
+    </header>
+    <main>
+        <section id="lore-list">
+            <h2>Lore Entries</h2>
+            <ul id="lore-entries"></ul>
+        </section>
+        <section id="add-lore">
+            <h2>Add New Lore Entry</h2>
+            <form id="lore-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <label for="category">Category:</label>
+                <input type="text" id="category" required>
+                <label for="content">Content:</label>
+                <textarea id="content" required></textarea>
+                <button type="submit">Add Lore Entry</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 WoW Lore Website</p>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

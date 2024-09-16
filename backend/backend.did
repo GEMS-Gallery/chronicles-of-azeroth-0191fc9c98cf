@@ -1,0 +1,12 @@
+type LoreEntry = 
+ record {
+   category: text;
+   content: text;
+   id: nat;
+   title: text;
+ };
+service : {
+  addLoreEntry: (text, text, text) -> (nat);
+  getLoreEntry: (nat) -> (opt LoreEntry) query;
+  listLoreEntries: () -> (vec LoreEntry) query;
+}
